@@ -14,14 +14,14 @@ args = parser.parse_args()
 # Define and implement the functionality for the -prediagnostics subcommand
 def prediagnostics():
                     try:
-                        subprocess.run(["python", "Modules\\prediagnostics.py"])
+                        subprocess.run(["python", "Modules//prediagnostics.py"])
                     except Exception as e:
                         print(f"Error calling script.py: {str(e)}")
 print("Running pre-diagnostics...")
 
 def diagnostics():
     try:
-        subprocess.run(["python", "Modules\\top.py"])
+        subprocess.run(["python", "Modules//top.py"])
     except Exception as e:
         print(f"Error calling script.py: {str(e)}")
     
